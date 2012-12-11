@@ -12,8 +12,14 @@ h1, h2 {
   text-align: center;
 }
 
+.age-ility-colour {
+  color: rgb(0, 176, 80);
+}
+
 .age-ility {
   color: rgb(0, 176, 80);
+  font-style: italic;
+  font-weight: bold;
 }
 
 #content {
