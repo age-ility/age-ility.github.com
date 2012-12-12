@@ -31,3 +31,12 @@ h1, h2 {
   background-color: white;
   border: 1px solid #CCC;
 }
+
+img.portrait {
+  float: left;
+  margin: 0.5em
+}
+
+div.assoc {
+  font-style: italic;
+}
