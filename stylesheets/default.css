@@ -22,17 +22,27 @@ h1, h2 {
   font-weight: bold;
 }
 
-#content {
+div#content, div#collab {
   padding-left: 1.5em;
   padding-right: 1.5em;
   width: 700px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   background-color: white;
   border: 1px solid #CCC;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+
+div#collab {
+  text-align: center;
+}
+
+div#collab img {
+  vertical-align: middle;
 }
 
 img.portrait {
