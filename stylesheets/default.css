@@ -30,6 +30,9 @@ h1, h2 {
   margin-right: auto;
   background-color: white;
   border: 1px solid #CCC;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
 img.portrait {
