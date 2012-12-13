@@ -53,3 +53,23 @@ img.portrait {
 div.assoc {
   font-style: italic;
 }
+
+div#header {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#logo {
+  display: inline-block;
+  border: 1px solid #CCC;
+  background: white;
+  border-radius: 10px;
+  padding: 10px
+}
+
+div#nulogo {
+  display: inline-block;
+  margin: 1em;
+  float: right;
+}
