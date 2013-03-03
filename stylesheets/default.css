@@ -102,3 +102,11 @@ div#nulogo {
 a.imglink {
   text-decoration: none;
 }
+
+p.quote {
+  font-style: italic;
+}
+
+p.author {
+  text-align: right;
+}
