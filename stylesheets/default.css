@@ -105,3 +105,12 @@ p.quote {
 p.author {
   text-align: right;
 }
+
+p.email {
+  display: none;
+}
+
+span.filled {
+  color: red;
+  margin-left: 1em;
+}
