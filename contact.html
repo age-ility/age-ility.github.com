@@ -3,6 +3,9 @@ layout: default
 title: Contact Us
 ---
 
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/javascripts/parsley.min.js"></script>
+
 <h1 class="age-ility-colour">Contact Us</h1>
 
 <p>
@@ -25,10 +28,49 @@ Australia
 </p>
 
 <p>
+Or, simply fill in the contact form below:
+</p>
+
+<form id="cform" method="post" action="https://psych.newcastle.edu.au/forms/ag_contact.php" accept-charset="UTF-8"
+  data-parsley-validate
+  data-parsley-errors-wrapper="<span></span>"
+  data-parsley-error-template="<span></span>"
+  data-parsley-error-class="error-field"
+  data-parsley-trigger="change click">
+  <p>
+  Your Name:
+  <input type="text" name="cname" id="cname" data-parsley-required data-parsley-required-message="Please enter your name." />
+  </p>
+  <p>
+  Your Email Address:
+  <input type="email" name="cemail" id="cemail" data-parsley-required data-parsley-required-message="Please enter your email address." />
+  </p>
+  <p>
+  Your Age (years):
+  <input type="number" name="cage" id="cage" size="3" data-parsley-required data-parsley-required-message="Please enter your age." />
+  </p>
+  <p>
+  Your Gender:
+  <select name="cgender" id="cgender" data-parsley-required data-parsley-required-message="Please select your gender.">
+    <option value=""></option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+  </select>
+  </p>
+  <p>
+  Your message or questions: <i>(optional)</i><br>
+  <textarea name="cmessage" id="cmessage" rows="8" cols="60"></textarea>
+  </p>
+  <p class="email">
+  <input type="text" name="email" id="email">
+  </p>
+  <p>
+  <input type="submit" value="Send" name="commit" class="btn">
+  </p>
+</form>
+
+<p>
 You may also want to contact Associate Professor Frini Karayanidis on (02) 4921 5457 or
 <a href="mailto:Frini.Karayanidis@newcastle.edu.au">Frini.Karayanidis@newcastle.edu.au</a>
 </p>
-
-<div style="text-align: center;">
-  <img src="/images/qrcode.png" width="100" height="100" alt="QR Code" />
-</div>
