@@ -18,7 +18,7 @@ if (strlen($_POST["email"]) === 0) {
     $headers['From'] = 'Age-ility Contact Form <noreply@psych.newcastle.edu.au>';
     $headers['To'] = 'age-ility@newcastle.edu.au';
     $headers['Subject'] = 'age-ility.org.au Contact Form Message';
-    $body = "Name: {$_POST["cname"]}\nEmail: {$_POST["cemail"]}\nAge: {$_POST["cage"]}\nGender: {$_POST["cgender"]}\nMessage:\n\n{$_POST["cmessage"]}\n";
+    $body = "Name: {$_POST["cname"]}\nEmail: {$_POST["cemail"]}\nPhone: {$_POST["cphone"]}\nAge: {$_POST["cage"]}\nGender: {$_POST["cgender"]}\nMessage:\n\n{$_POST["cmessage"]}\n";
     $smtp =& Mail::factory('smtp', $mail_params);
     $smtp->send($recipients, $headers, $body);
   }
