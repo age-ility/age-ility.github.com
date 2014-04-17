@@ -105,6 +105,7 @@
   *zoom: 1;
   *margin-left: .3em;
   display: inline-block;
+  *display: inline;
 }
 .btn-group:before,
 .btn-group:after {
